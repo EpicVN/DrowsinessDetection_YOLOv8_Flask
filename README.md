@@ -1,4 +1,4 @@
-Drowsiness Detection
+#Drowsiness Detection
 
 ## Description
 The project is a proof of concept application developed using the Flask library. It utilizes the YOLOv8 machine learning algorithm for object detection, specifically targeting the identification of humans and vehicles trespassing in forest areas. The purpose of the project is to assist forest authorities in efficiently dealing with trespassing incidents without the need for constant patrolling, thereby optimizing resource utilization.
