@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>Drowsiness | Webcam</title>
+        <link rel="icon" type="image/x-icon" href="../static/assets/img/Rhodes_Island_icon.png">
+        <link rel="stylesheet" href="../static/assets/css/webcam.css">
+        <link rel="stylesheet" href="../static/assets/fonts/themify-icons/themify-icons.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <header class="title">
+        <h1>DROWSINESS DETECTION WEBCAM</h1>
+      </header>
+      
+      <section class="container-section screen">
+        <img src="{{ url_for('webapp') }}" alt="Web Cam Not Detected" />
+      </section>
+
+      <button type="button" class="back-button" onclick="history.go(-1)">
+        <i class="back-icon ti-arrow-left"></i>
+      </button>
+    </div>
+  </body>
+</html>

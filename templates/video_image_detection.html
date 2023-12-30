@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+      <title>Drowsiness | Video</title>
+      <link rel="icon" type="image/x-icon" href="../static/assets/img/Rhodes_Island_icon.png">
+      <link rel="stylesheet" href="../static/assets/css/video_image.css">
+      <link rel="stylesheet" href="../static/assets/fonts/themify-icons/themify-icons.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="container-section section-left">
+      <header class="title">
+        <h1>DROWSINESS DETECTION</h1>
+      </header>
+  
+      <div class="upload-file-section">
+        <form method='POST' enctype="multipart/form-data" >
+          {{form.hidden_tag()}}
+          {{form.file(class_="custom-file-input")}}
+          <button class="button" type="submit" name="favorite" value="x">Submit</button>
+        </form>
+      </div>
+    
+    </div>
+    
+    <section class="container-section screen">
+      <img src="{{ url_for('video') }}" alt="Upload video">
+    </section>
+
+    <button type="button" class="back-button" onclick="history.go(-1)">
+      <i class="back-icon ti-arrow-left"></i>
+    </button>
+  </div>
+</body>
+
+</html>
