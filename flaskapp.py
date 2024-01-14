@@ -27,7 +27,7 @@ db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 
 app.config['SECRET_KEY'] = 'epicvn'
-app.config['UPLOAD_FOLDER'] = 'static/files'
+app.config['UPLOAD_FOLDER'] = 'static'
 
 login_manager = LoginManager()
 login_manager.init_app(app)
