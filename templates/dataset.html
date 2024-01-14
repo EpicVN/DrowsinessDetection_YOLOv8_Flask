@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drowsiness Detection</title>
-    <link rel="stylesheet" href="../static/assets/css/video_image.css">
+    <link rel="stylesheet" href="./../static/assets/css/dashboard.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -89,23 +89,7 @@
     </nav>
 
     <section class="home">
-        <div class="title">Upload image or video to detect</div>
-          
-        <div class="section">
-            <div class="upload-file-section"> 
-                <form method='POST' enctype="multipart/form-data" >
-                    {{form.hidden_tag()}}
-                    {{form.file(class_="custom-file-input")}}
-                    <button class="button" type="submit" name="favorite" value="x">Submit</button>
-                </form>          
-            </div>
-    
-            <div class="screen-section">
-                <div class="screen">
-                    <img src="{{ url_for('video') }}" alt="Upload video">
-                </div>
-            </div>
-        </div>
+        <div class="text">Dataset</div>
     </section>
 
     <script src="../static/assets/js/script.js"></script>

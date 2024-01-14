@@ -1,5 +1,10 @@
 flask
 flask_wtf
+wtforms
+flask_sqlalchemy
+flask_login
+flask_bcrypt
+email_validator
 opencv-python
 ultralytics
 
