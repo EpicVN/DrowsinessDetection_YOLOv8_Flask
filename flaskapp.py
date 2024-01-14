@@ -124,9 +124,9 @@ def logout():
 def home():
     return render_template('dashboard.html')
 
-@app.route('/dataset', methods=['GET','POST'])
+@app.route('/details', methods=['GET','POST'])
 def dataset():
-    return render_template('dataset.html')
+    return render_template('details.html')
 
 @app.route("/Webcam", methods=['GET','POST'])
 def webcam():
