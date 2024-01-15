@@ -12,7 +12,7 @@ def video_detection(path_x):
     
 
     model=YOLO("YOLO-Weights/best.pt")
-    classNames = ["all", "guc_dau", "ngap", "ngu", "ngua_dau", "phai_ngu", "phai_tinh", "tinh", "trai_ngu", "trai_tinh"]
+    classNames = ["Buon_Ngu", "Tinh_Tao"]
     while True:
         success, img = cap.read()
         if not success:
