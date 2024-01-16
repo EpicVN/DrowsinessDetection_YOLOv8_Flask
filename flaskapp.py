@@ -63,9 +63,6 @@ class LoginForm(FlaskForm):
 
 #Use FlaskForm to get input video file  from user
 class UploadFileForm(FlaskForm):
-    #We store the uploaded video file path in the FileField in the variable file
-    #We have added validators to make sure the user inputs the video in the valid format  and user does upload the
-    #video when prompted to do so
     file = FileField("File",validators=[InputRequired()])
     submit = SubmitField("Run")
 

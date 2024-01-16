@@ -15,6 +15,7 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
+    --skin-color: #ffdbac;
 
     /*Transition*/
     --tran-02: all 0.2s ease;
@@ -286,14 +287,247 @@ body.dark .switch::before {
     transition: var(--tran-05);
 }
 
-.home .text {
-    font-size: 30px;
+.home .home-title {
+    font-size: 36px;
     font-weight: 500;
     color: var(--text-color);
-    padding: 8px 40px;
+    padding: 16px 40px;
 }
 
 .sidebar.close ~ .home {
     left: 88px;
     width: calc(100% - 88px);
+}
+
+/* ================================================== */
+
+.container {
+    display: flex;
+}
+
+/* Main Section */
+
+.main {
+    position: relative;
+    padding: 10px 40px;
+    width: 100%;
+}
+
+.main-top {
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--text-color);
+}
+
+.main-skills {
+    display: flex;
+    margin-top: 20px;
+}
+
+.main-skills .card {
+    width: calc(100% / 3);
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.main-skills .dataset1 {
+  background-image: url(../img/dataset1.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.main-skills .dataset2 {
+  background: url(../img/dataset2.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.main-skills .dataset3 {
+  background: url(../img/dataset3.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.main-skills .card h3 {
+    margin: 10px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+.main-skills .card p {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.main-skills .card button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.main-skills .card button:hover {
+    background: rgba(223, 70, 15, 0.856);
+}
+
+.main-skills .card i {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.main-skills .card a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Information */
+.main-course {
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+
+.course-box {
+  width: 100%;
+  height: 300px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 20px;
+  background: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.course-box ul {
+  list-style: none;
+  display: flex;
+}
+
+.course-box ul li {
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.course-box ul .active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.course-box .course {
+  display: flex;
+}
+
+.box {
+  width: calc(100% / 3);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.course-box .box .flask-icon img {
+  width: 100px;
+  border-radius: 60px;
+  margin: 30px 0;
+}
+
+.box1 {
+  width: calc(100% - (100% / 3));
+  background-image: url(../img/yolov8-bg.jpeg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.box2 {
+  width: calc(100% - (100% / 3));
+  background-image: url(../img/flask-bg.png);
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.box3 {
+    width: calc(100% - (100% / 3));
+    height: 260px;
+    background-image: url(../img/Evaluation2.png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.box .evaluation-icon {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.box .evaluation-icon img {
+    width: 100%;
+    height: 120px;
+    border-radius: 60px;
+    margin: 30px 0;
+}
+
+.box p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.box button {
+  background: #000;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background: rgba(0, 0, 0, 0.842);
+}
+
+.box i {
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+
+.course-box .box .image {
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.course-box .box .image img {
+  width: 100px;
+  border-radius: 60px;
+}
+
+.course-box .box button {
+  padding: 10px;
+}
+
+.course-box .box a {
+  text-decoration: none;
+  color: var(--sidebar-color);
 }

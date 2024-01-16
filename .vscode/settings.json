@@ -1,13 +1,17 @@
 {
     "cSpell.words": [
+        "Buon",
         "epicvn",
         "imencode",
         "inputbox",
         "jsonify",
         "sqlalchemy",
+        "Tinh",
         "tobytes",
+        "ultralytics",
         "werkzeug",
         "wtforms",
+        "xyxy",
         "YOLO"
     ]
 }
